@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    background: #1C6EA4;
+    background: -moz-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+    background: -webkit-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+    background: linear-gradient(to right, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 180px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 5px 10px 5px;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 5px 10px 5px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.container {
+  margin-top: 0px;
+  border-bottom: 5px ridge #C3CEC2;
+}
+
+.btn-group .button {
+  background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 15px 22px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 200px;
+  display: block;
+}
+
+.btn-group .button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #3e8e41;
+}
+.formulario .sector {
+    background-color: none;
+    font-size: 16px;
+}
+
+input {
+    background-color: lightblue;
+    font-weight: bold;
+}
