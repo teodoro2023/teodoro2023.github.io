@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    background: #1C6EA4;
+    background: -moz-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+    background: -webkit-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+    background: linear-gradient(to right, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 5px 10px 5px;
+    color: black;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px 5px 10px 5px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 75em;
+  margin-top: 0px; 
+}
+
+.btn-group {
+  height: 15%;
+}
+
+.btn-group .button {
+  background-color: #4CAF50;
+  border: 1px solid green;
+  color: white;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  width: 8em;
+  cursor: pointer;
+  display: block;
+}
+
+.btn-group .button:not(:last-child) {
+  border-bottom: none;
+}
+
+.btn-group .button:hover {
+  background-color: #3e8e41;
+}
+
+.formulario {
+  margin-top: 10px;
+  background-color: none;
+}
+
+.formulario .sector {
+    margin-top: 20px;
+    background-color: none;
+    font-size: 14px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.linea {
+    border-color: black;
+    border-width: 1px;
+    border-style: dotted;
+}
+
+input {
+    background-color: lightblue;
+    font-weight: bold;
+    width: auto;
+}
+
+@media (max-width: 1200px){
+  body {
+    font-size: 14px;
+  }  
+  .btn-group .button {
+    padding: 0px;
+    font-size: 16px;
+    width: 8em;
+  }  
+}
+
+@media (max-width: 768px){
+  .btn-group .button {
+    padding: 0px;
+    width: 8em;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 400px){
+  .btn-group .button {
+    padding: 0px;
+    width: 7em;
+    font-size: 11px;
+  }
+  .formulario .sector {
+     font-size: 10px;
+  }
+  .fotoperfil {
+    width: 7em;
+  }   
+}

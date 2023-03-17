@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Proyecto Final</title>
+    <link rel="icon" type="image/jpg" href="logo.jpg">
+    <link rel="stylesheet" type="text/css" href="estilofinal.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="col-xs-12 col-sm-6 col-md-8"></div>
+
+        <header id="encabezado">
+            <h1>CURRICULUM VITAE</h1>
+        </header>
+
+        <div class="btn-group">
+            <button title="Ver la información general del curriculum" id="info_personal" class="button">Información Personal</button>
+            <button title="Consultar la experiencia laboral" id="experiencia" class="button">Experiencia</button>
+            <button title="Habilidades del postulante" id="habilidad" class="button">Habilidades</button>
+            <button title="Enviar" id="enviar" class="button">Enviar datos</button>
+            <br><br>
+        </div>
+
+        <form class="formulario" action="">
+            <fieldset id="sector1" class="sector" style="display: none;">
+                <h2>Información Personal</h2>    
+                
+                <img src="Perfil.jpg" id="fotoperfil" width="120" text-align="center" alt="Foto de perfil"> 
+                <br><br>
+                <label>Apellido: </label> <input type="text" id="apellido" name="apellido" size="15" value="" required/> <br>
+                <label>Nombre(s): </label> <input type="text" id="nombre" name="nombre" size="25" value="" required/> <br><br>
+                <label>DNI: </label> <input type="text" id="dni" name="dni" size="8" value="" required/>
+                <label>CUIL: </label> <input type="text" id="cuil" name="cuil" size="10" value="" required/> <br>
+                <label>Fecha de Nacimiento: </label> <input type="date" id="fecnac" name="fecnac" size="8" value="1973-01-27" required/> <br><br>
+                <label>Domicilio: </label> <input type="text" id="domicilio" name="domicilio" size="15" value="" required/>
+                <label>Localidad: </label> <input type="text" id="localidad" name="localidad" size="15" value="" required/> <br>
+                <label>Provincia: </label> <input type="text" id="provincia" name="provincia" size="12" value="" required/> <br><br>
+                <label>Teléfono: </label> <input type="text" id="telefono" name="telefono" value="" size="9" required/> <br>
+                <label>Correo: </label> <input type="email" id="correo" name="correo" value="" size="25" required/> <br><br>
+            </fieldset>  
+        
+            <fieldset id="sector2" class="sector" style="display: none;">
+                <h2>Experiencia</h2>
+
+                <label>Empresa: </label> <input type="text" id="empresa0" name="empresa0" size="35" value=""> <br>
+                <label>Cargo: </label> <input type="text" id="cargo0" name="cargo0" value=""> <br>
+                <label>Antigüedad en el cargo: </label> <input type="text" id="antig0" name="antig0" size="6" value="">
+                <br><br> <div class="linea"></div> <br>
+                <label>Empresa: </label> <input type="text" id="empresa1" name="empresa1" size="35" value=""> <br>
+                <label>Cargo: </label> <input type="text" id="cargo1" name="cargo1" value=""> <br>
+                <label>Antigüedad en el cargo: </label> <input type="text" id="antig1" name="antig1" size="6" value="">
+                <br><br> <div class="linea"></div> <br>
+                <label>Empresa: </label> <input type="text" id="empresa2" name="empresa2" size="35" value=""> <br>
+                <label>Cargo: </label> <input type="text" id="cargo2" name="cargo2" value=""> <br>
+                <label>Antigüedad en el cargo: </label> <input type="text" id="antig2" name="antig2" size="6" value="">
+
+            </fieldset>
+
+            <fieldset id="sector3" class="sector" style="display: none;">
+                <h2>Habilidades</h2>
+            
+                <input type="checkbox" id="habi1" name="habi1" checked=1> <label> Idiomas</label><br>
+                <input type="checkbox" id="habi2" name="habi2" checked=1> <label> Manejo de PC</label><br>
+                <input type="checkbox" id="habi3" name="habi3" checked=1> <label> Buena comunicación verbal</label><br>
+                <input type="checkbox" id="habi4" name="habi4" checked=1> <label> Trabajo en equipo</label><br>
+                <input type="checkbox" id="habi5" name="habi5" checked=1> <label> Capacidad de liderazgo</label><br>
+            </fieldset>
+
+            <fieldset id="sector4" class="sector" style="display: none;">
+                <h2>Enviar curriculum</h2><br>
+                <form name="formulario" method="post" action="/send.php">
+                    <!-- Datos del formulario -->
+                    <label> Usuario </label> <input type="text" name="usuario" required/>
+                    <!-- Botón de envío de formulario -->
+                    <input type="submit" value="Enviar formulario" onclick='return validar()'/>
+                  </form>
+            </fieldset>    
+        </form>
+    </div>    
+    
+    <script src="funciones.js"></script>
+
+</body>
